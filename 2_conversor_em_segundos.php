@@ -18,3 +18,4 @@ $dias_convertidos      = ($dias * 24) * (60**2);
 $resultado_em_segundos = $dias_convertidos + $horas_convertidas + $minutos_convertidos + $segundos;
 
 print " \n $dias dia(s), $horas hora(s), $minutos minuto(s) e $segundos segundos equivalem a: $resultado_em_segundos segundos. ";
+
