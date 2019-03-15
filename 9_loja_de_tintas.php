@@ -32,7 +32,7 @@ while ($lata1 < $litros_gastos) {
     $quantidade_lata1 = $quantidade_lata1 + 1;
 }
 
-print "\n \n Para pintar $area_pintada metro(s) quadrato(s) poderá ser efetuada a compra de $quantidade_lata1 lata(s) de 18L, custando assim, R$ $valor_lata1";
+print "\n \n Para pintar $area_pintada metro(s) quadrado(s) poderá ser efetuada a compra de $quantidade_lata1 lata(s) de 18L, custando assim, R$ $valor_lata1";
 
 
 while ($galao1 < $litros_gastos) {
@@ -42,7 +42,7 @@ while ($galao1 < $litros_gastos) {
     $quantidade_galao1 = $quantidade_galao1 + 1;
 }
 
-print "\n \n Para pintar $area_pintada metro(s) quadrato(s) poderá ser efetuada a compra de $quantidade_galao1 galão(ões) de 3,6L, custando assim, R$ $valor_galao1";
+print "\n \n Para pintar $area_pintada metro(s) quadrado(s) poderá ser efetuada a compra de $quantidade_galao1 galão(ões) de 3,6L, custando assim, R$ $valor_galao1";
 
 
 while ( $litros_gastos > 0){
@@ -63,6 +63,6 @@ while ( $litros_gastos > 0){
 
 $valor_total = $valor_galao2 + $valor_lata2;
 
-print "\n \n Para pintar $area_pintada metro(s) quadrato(s) poderá ser efetuada a compra de $quantidade_lata2 lata(s) de 18L, junto de $quantidade_galao2 galão(ões) de 3,6L custando assim, R$ $valor_total \n";
+print "\n \n Para pintar $area_pintada metro(s) quadrado(s) poderá ser efetuada a compra de $quantidade_lata2 lata(s) de 18L, junto de $quantidade_galao2 galão(ões) de 3,6L custando assim, R$ $valor_total \n";
 
-echo "\n *ESTÁ SENDO LEVADO EM CONSIDERAÇÃO UM ACRÉSCIMO DE 10% DO VALOR TOTAL DA ÁREA A SER PINTADA* \n \n";
+echo "\n *ESTÁ SENDO LEVADO EM CONSIDERAÇÃO (EM TODAS AS OPÇÕES) UM ACRÉSCIMO DE 10% DO VALOR TOTAL DA ÁREA A SER PINTADA* \n \n";
