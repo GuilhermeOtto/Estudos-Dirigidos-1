@@ -3,7 +3,7 @@
 print "\n Digite a área a ser pintada (em metros quadrados): ";
 $area_pintada      = (float) fgets (STDIN);
 
-// while  --> repita 
+// while  --> repita/enquanto 
 
 $margem_de_erro    = $area_pintada + ($area_pintada * 0.10);
 $litros_gastos     = $margem_de_erro / 6;
@@ -44,25 +44,24 @@ while ($galao1 < $litros_gastos) {
 
 print "\n \n Para pintar $area_pintada metro(s) quadrado(s) poderá ser efetuada a compra de $quantidade_galao1 galão(ões) de 3,6L, custando assim, R$ $valor_galao1";
 
+while ( $litros_gastos > 10.8) {
 
-while ( $litros_gastos > 0){
+    $valor_lata2       = $valor_lata2       + 80;
+    $quantidade_lata2  = $quantidade_lata2  + 1;
+    $litros_gastos     = $litros_gastos     - 18;  
+}
 
-    while ( $litros_gastos >= 18) {
+while ( $litros_gastos < 10.8 && $litros_gastos > 0) {
 
-        $valor_lata2       = $valor_lata2       + 80;
-        $quantidade_lata2  = $quantidade_lata2  + 1;
-        $litros_gastos     = $litros_gastos     - 18;  
-    }
-
-        $galao2            = $galao2            + 3.6;
-        $valor_galao2      = $valor_galao2      + 25;
-        $quantidade_galao2 = $quantidade_galao2 + 1;
-        $litros_gastos     = $litros_gastos     - 3.6;  
-    
+    $galao2            = $galao2            + 3.6;
+    $valor_galao2      = $valor_galao2      + 25;
+    $quantidade_galao2 = $quantidade_galao2 + 1;
+    $litros_gastos     = $litros_gastos     - 3.6;  
 }
 
 $valor_total = $valor_galao2 + $valor_lata2;
 
 print "\n \n Para pintar $area_pintada metro(s) quadrado(s) poderá ser efetuada a compra de $quantidade_lata2 lata(s) de 18L, junto de $quantidade_galao2 galão(ões) de 3,6L custando assim, R$ $valor_total \n";
 
-echo "\n *ESTÁ SENDO LEVADO EM CONSIDERAÇÃO (EM TODAS AS OPÇÕES) UM ACRÉSCIMO DE 10% DO VALOR TOTAL DA ÁREA A SER PINTADA* \n \n";
+echo "\n *ESTÁ SENDO LEVADO EM CONSIDERAÇÃO UM ACRÉSCIMO DE 10% DO VALOR TOTAL DA ÁREA A SER PINTADA EM TODAS AS OPÇÕES* \n \n";
+// caso o professor queira posso retirar das demais opções ja que é algo que não afeta sua estrutura     //    
